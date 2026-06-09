@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">CHRISTINE </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span>Hello, I'm</span>
+            <h1>Christine </h1>
+            <h2>BSIS STUDENT</h2>
+            <p>
+               Hello! I'm Christine Joy M. Madronero, a Bachelor of Science in Information Systems (BSIS) student with a strong interest in technology, organization, and continuous learning. I enjoy exploring how information systems can be used to improve processes and solve real-world problems. As a student, I am always eager to gain new knowledge, develop my skills, and take on opportunities that help me grow both personally and professionally.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="Christine.jpg" alt="Profile">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        <p>
+            I am a Bachelor of Science in Information Systems (BSIS) student at Davao del Norte State College with a passion for technology, creativity, and continuous learning. I enjoy working on system development, research, and digital design projects that solve real-world problems and enhance user experience. Through my academic and internship experiences, I have developed skills in communication, teamwork, organization, and problem-solving. I am committed to growing as an Information Systems professional and using technology to create meaningful and innovative solutions.
+
+
+
+
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+            
+            <div class="card">Information Management
+</div>
+            <div class="card">Problem-Solving & Critical Thinking
+</div>
+            <div class="card">UI/UX Design</div>
+            <div class="card">Data Encoding and Processing
+</div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Learning and Information Resource Center (LIRC)</h3>
+                
+                <p>
+                   Library Intern / Office Assistant Duration: 486 Hours
+                </p>
+                <p>
+                  Assisted in organizing records and documents
+                </p>
+                <p>
+                  Helped students and visitors
+                </p>
+                <p>
+                   Encode and managed files
+                </p>
+                <p>
+                   Supported daily office operations
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+            <h3>Bachelor of Science in Information Systems</h3>
+            <span>2022 - Present</span>
+            <p>BS Information Systems (BSIS) 4th Year | Graduation: June 26, 2026
+</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <h1>CHRISTINE</h1>
+        <p>BSIS STUDENT</p>
+        <p>© 2026 All Rights Reserved.</p>
+    </footer>
+<script>
+const slides = document.querySelectorAll('.slide');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('active');
+        }
+    });
+},{
+    threshold: 0.2
+});
+
+slides.forEach((slide) => {
+    observer.observe(slide);
+});
+</script>
+</body>
+</html>
